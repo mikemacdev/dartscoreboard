@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Cricket Tracker</title>
+</head>
+<body>
+	<div align="center">
+		<table id="scoreTable" border=1>
+			<tr>
+				<th>P1</th><th>P3</th><th>Cricket</th><th>P2</th><th>P4</th>
+			</tr>
+			<tr>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+				<td class="buttonCell">
+					<input type="button" class="hitButton" onClick="hitButtonClicked('twenty',1)"
+						id="sTwentyButton" value="20" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('twenty',2)"
+						id="dTwentyButton" value="Dbl" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('twenty',3)"
+						id="tTwentyButton" value="Tpl" />
+				</td>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+			</tr>
+			<tr>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+				<td class="buttonCell">
+					<input type="button" class="hitButton" onClick="hitButtonClicked('nineteen',1)"
+						id="sNineteenButton" value="19" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('nineteen',2)"
+						id="dNineteenButton" value="Dbl" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('nineteen',3)"
+						id="tNineteenButton" value="Tpl" />
+				</td>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+			</tr>
+			<tr>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+				<td class="buttonCell">
+					<input type="button" class="hitButton" onClick="hitButtonClicked('eighteen',1)"
+						id="sEighteenButton" value="18" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('eighteen',2)"
+						id="dEighteenButton" value="Dbl" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('eighteen',3)"
+						id="tEighteenButton" value="Tpl" />
+				</td>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+			</tr>
+			<tr>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+				<td class="buttonCell">
+					<input type="button" class="hitButton" onClick="hitButtonClicked('seventeen',1)"
+						id="sSeventeenButton" value="17" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('seventeen',2)"
+						id="dSeventeenButton" value="Dbl" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('seventeen',3)"
+						id="tSeventeenButton" value="Tpl" />
+				</td>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+			</tr>
+			<tr>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+				<td class="buttonCell">
+					<input type="button" class="hitButton" onClick="hitButtonClicked('sixteen',1)"
+						id="sSixteenButton" value="16" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('sixteen',2)"
+						id="dSixteenButton" value="Dbl" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('sixteen',3)"
+						id="tSixteenButton" value="Tpl" />
+				</td>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+			</tr>
+			<tr>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+				<td class="buttonCell">
+					<input type="button" class="hitButton" onClick="hitButtonClicked('fifteen',1)"
+						id="sFifteenButton" value="15" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('fifteen',2)"
+						id="dFifteenButton" value="Dbl" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('fifteen',3)"
+						id="tFifteenButton" value="Tpl" />
+				</td>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+			</tr>
+			<tr>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+				<td class="buttonCell">
+					<input type="button" class="hitButton" onClick="hitButtonClicked('bullseye',1)"
+						id="sBullseyeButton" value="BullsEye" />
+					<input type="button" class="hitButton" onClick="hitButtonClicked('bullseye',2)"
+						id="dBullseyeButton" value="Dbl" />
+				</td>
+				<td class="tallyCell">XXX</td>
+				<td class="tallyCell">XXX</td>
+			</tr>
+			<tr>
+				<td class="scoreCell" align="center">999</td>
+				<td class="scoreCell" align="center">999</td>
+				<td align="center">---Score---</td>
+				<td class="scoreCell" align="center">999</td>
+				<td class="scoreCell" align="center">999</td>
+			</tr>
+		</table>
+	</div>
+	<div align="center">
+		<input type="button" class="pushButton" id="undoButton"    value="Undo"
+		  onClick="undoButtonClicked()" />
+		<input type="button" class="pushButton" id="newGameButton" value="New Game"
+		  onClick="newGameButtonClicked()" />
+		<input type="button" class="pushButton" id="missButton"    value="Miss"
+		  onClick="missButtonClicked()" />
+		<input type="button" class="playerButton" id="twoPsButton"   value="2P"
+		  onClick="twoPsButtonClicked()" />
+		<input type="button" class="playerButton" id="threePsButton" value="3P"
+		  onClick="threePsButtonClicked()" />
+		<input type="button" class="playerButton" id="fourPsButton"  value="4P"
+		  onClick="fourPsButtonClicked()" />
+	</div>
+
+	<link rel="stylesheet" type="text/css" href="cricket.css">
+	<script src="cricket.js" type="text/javascript"></script>
+</body>
+</html>

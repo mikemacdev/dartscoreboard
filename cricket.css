@@ -1,0 +1,83 @@
+body
+{
+	width: 320px;
+	height: 356px;
+	border: 1px solid #000000;
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+td.buttonCell
+{
+	width: 146px;
+}
+
+td.tallyCell
+{
+	width: 34px;
+	padding-left: 2px;
+	font-size: 16px;
+}
+
+td.scoreCell
+{
+	color: #008800;
+}
+
+input
+{
+	font-weight: bold;
+}
+
+input.hitButton
+{
+	width: 46px;
+	height: 33px;
+	background-color: #ff5555;
+}
+
+#sBullseyeButton
+{
+	width: 71px;
+}
+
+#dBullseyeButton
+{
+	width: 71px;
+}
+
+input.pushButton
+{
+	height: 35px;
+}
+
+#undoButton
+{
+	width: 54px;
+	background-color: #ff8844;
+}
+
+#newGameButton
+{
+	width: 84px;
+	background-color: #4488ff;
+}
+
+#missButton
+{
+	width: 54px;
+	background-color: #88ff44;
+}
+
+input.playerButton
+{
+	width: 35px;
+	height: 31px;
+	background-color: #aaaaaa;
+}
+
+#fourPsButton
+{
+	background-color: #dddddd;
+}
